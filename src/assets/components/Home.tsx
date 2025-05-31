@@ -5,7 +5,7 @@ const Home: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col md:flex-row items-center justify-center px-4 bg-white">
       {/* Izquierda: Personaje + globo */}
-      <div className="relative max-w-md md:max-w-lg">
+      <div className="relative max-w-md md:max-w-lg mt-12">
         <img src={personaje} alt="Personaje" className="w-[300px] md:w-[400px]" />
 
         {/* Globo de texto */}
@@ -31,15 +31,16 @@ const Home: React.FC = () => {
       </div>
 
       {/* Derecha: Texto y botón */}
-      <div className="text-center md:text-left mt-8 md:mt-0 md:ml-10">
+      <div className="text-center md:text-left mt-8 md:mt-44 md:ml-10">
         <h1 className="text-[#5b5b5b] font-extrabold text-xl md:text-2xl mb-6">
           La manera entretenida, efectiva y <br /> gratuita de aprender lenguaje de señas.
         </h1>
         <button
-          className="bg-[#f4543c] text-white font-bold py-3 px-12 rounded-xl shadow-[2px_2px_0_2px_#b23f2e] hover:bg-[#d84328] transition duration-300 text-lg w-full max-w-xs sm:max-w-sm md:max-w-md"
-        >
-          EMPEZAR
-        </button>
+  className="bg-[#f4543c] text-white font-bold py-2 px-32 rounded-xl shadow-[2px_2px_0_2px_#b23f2e] hover:bg-[#d84328] transition duration-300 text-lg block mx-auto mt-12 "
+>
+  EMPEZAR
+</button>
+
       </div>
     </div>
   )
