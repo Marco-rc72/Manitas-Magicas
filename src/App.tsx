@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
 import ManitaMagicasApp from './assets/components/Etapas'
 import Home from './assets/components/Home'
+import LoginPage from './assets/components/Login'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/etapas" element={<ManitaMagicasApp />} />
+          <Route path='login' element={<LoginPage/>}/>
         </Routes>
       </Router>
     </div>

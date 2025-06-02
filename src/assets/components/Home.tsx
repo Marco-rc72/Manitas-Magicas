@@ -4,15 +4,10 @@ import personaje from '../image/Barny.png'
 const Home: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col md:flex-row items-center justify-center px-4 bg-white">
-      {/* Izquierda: Personaje + globo */}
       <div className="relative max-w-md md:max-w-lg mt-12">
         <img src={personaje} alt="Personaje" className="w-[300px] md:w-[400px]" />
-
-        {/* Globo de texto */}
         <div className="absolute top-10 right-[-30px] bg-white shadow-lg rounded-full px-6 py-4 text-center text-[#f4543c] font-bold text-base leading-snug z-10">
           ¡Hola! <br /> Es un gusto <br /> conocerte
-
-          {/* Pico apuntando hacia el personaje */}
           <svg
             className="absolute -bottom-[8px] left-2"
             width="32"
@@ -29,18 +24,15 @@ const Home: React.FC = () => {
           </svg>
         </div>
       </div>
-
-      {/* Derecha: Texto y botón */}
       <div className="text-center md:text-left mt-8 md:mt-44 md:ml-10">
         <h1 className="text-[#5b5b5b] font-extrabold text-xl md:text-2xl mb-6">
           La manera entretenida, efectiva y <br /> gratuita de aprender lenguaje de señas.
         </h1>
         <button
-  className="bg-[#f4543c] text-white font-bold py-2 px-32 rounded-xl shadow-[2px_2px_0_2px_#b23f2e] hover:bg-[#d84328] transition duration-300 text-lg block mx-auto mt-12 "
->
-  EMPEZAR
-</button>
-
+          className="bg-[#f4543c] text-white font-bold py-2 px-32 rounded-xl shadow-[2px_2px_0_2px_#b23f2e] hover:bg-[#d84328] transition duration-300 text-lg block mx-auto mt-12"
+        >
+          EMPEZAR
+        </button>
       </div>
     </div>
   )
